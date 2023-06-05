@@ -5,6 +5,7 @@
 
 int main()
 {
+    std::cout << "Get Ready to trade!" << std::endl;
     return 0;
 }
 
