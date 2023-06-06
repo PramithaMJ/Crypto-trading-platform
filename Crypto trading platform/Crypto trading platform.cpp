@@ -4,6 +4,7 @@
 #include <iostream>
 
 void prinMenu() {
+
 	// 1 print help
 	std::cout << "1: Print help " << std::endl;
 	// 2 print exchange stats
@@ -21,6 +22,30 @@ void prinMenu() {
 	std::cout << "Type in 1-6" << std::endl;
 }
 
+void printHelp() {
+	std::cout << "Help - your aim is to make money. Analyse the market and make bid and offers." << std::endl;
+}
+
+void printMarketStats() {
+	std::cout << "Market looks good." << std::endl;
+}
+
+void enterOffer() {
+	std::cout << "Make a offer - enter the amount." << std::endl;
+}
+
+void enterBid() {
+	std::cout << "Make a bid - enter the amount." << std::endl;
+}
+
+void printWallet() {
+	std::cout << "Your wallet is empty. " << std::endl;
+}
+
+void gotoNextTimeFrame() {
+	std::cout << "Going to next time frame." << std::endl;
+}
+
 int getUserOption() {
 
 	int userOption;
@@ -34,22 +59,22 @@ void processUserOption(int userOption) {
 	switch (userOption) 
 	{
 		case 1:// 1 print help
-			std::cout << "Help - your aim is to make money. Analyse the market and make bid and offers." << std::endl;
+			printHelp();
 			break;
 		case 2:// 2 print exchange stats
-			std::cout << "Market looks good." << std::endl;
+			printMarketStats();
 			break;
 		case 3:// 3 make an offer
-			std::cout << "Make a offer - enter the amount." << std::endl;
+			enterOffer();
 			break;
 		case 4:// 4 make a bid
-			std::cout << "Make a bid - enter the amount." << std::endl;
+			enterBid();
 			break;
 		case 5:// 5 print wallet 
-			std::cout << "Your wallet is empty. " << std::endl;
+			printWallet();
 			break;
 		case 6:// 6 continue
-			std::cout << "Going to next time frame." << std::endl;
+			gotoNextTimeFrame();
 			break;
 		default://bad input
 			std::cout << "Invald choise. Choose 1-6" << std::endl;
