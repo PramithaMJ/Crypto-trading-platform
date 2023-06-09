@@ -116,12 +116,12 @@ int main()
 
 
 
-	//while (true) //when type ctrl + c then exists the console (stops)
-	//{
-	//	prinMenu();
-	//	int userOption = getUserOption();
-	//	processUserOption(userOption);
-	//}
+	while (true) //when type ctrl + c then exists the console (stops)
+	{
+		prinMenu();
+		int userOption = getUserOption();
+		processUserOption(userOption);
+	}
 
 	return 0;
 }
