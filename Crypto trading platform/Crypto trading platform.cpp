@@ -140,11 +140,24 @@ int main()
 	//	processUserOption(userOption);
 	//}
 
+	std::vector<OrderBookEntry> orders;
+	//do that in vector
+	/*OrderBookEntry order1{ 1000,0.02,"2020/03/17 17:01:24.884492" ,"BTC/USDT" ,OrderBookType::bid };
+	OrderBookEntry order2{ 3000,0.02,"2020/03/17 17:01:24.884492" ,"BTC/USDT" ,OrderBookType::bid };
+	*/
+
+	orders.push_back(OrderBookEntry{ 1000,0.02,"2020/03/17 17:01:24.884492" ,"BTC/USDT" ,OrderBookType::bid });
+	orders.push_back(OrderBookEntry{ 2000,0.02,"2020/03/17 17:01:24.884492" ,"BTC/USDT" ,OrderBookType::bid });
+
+	//std::cout << "The price is " << orders[1].price << std::endl;
 	
-	OrderBookEntry order1{ 1000,0.02,"2020/03/17 17:01:24.884492" ,"BTC/USDT" ,OrderBookType::bid };
+	//iterrate vector . when using & it not make copyies
+	for (OrderBookEntry& order : orders) {
+		std::cout << "The price is " << order.price << std::endl;
+	}
 
 
-	std::cout << "The price is " << order1.price << std::endl;
+
 	return 0;
 }
 
