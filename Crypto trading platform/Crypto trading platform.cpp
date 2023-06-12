@@ -151,11 +151,22 @@ int main()
 
 	//std::cout << "The price is " << orders[1].price << std::endl;
 	
+	//Way 1
 	//iterrate vector . when using & it not make copyies
 	for (OrderBookEntry& order : orders) {
 		std::cout << "The price is " << order.price << std::endl;
 	}
 
+	//Way 2
+	//Another way to itertate vector it not copying data 
+	for (unsigned int i = 0; i<orders.size();++i) {// ++i is more efficient than i++. ++i is increment derectly 		
+		std::cout << "The price is " << orders[i].price << std::endl;
+	}
+
+	//Way 3
+	for (unsigned int i = 0; i < orders.size(); ++i) {// ++i is more efficient than i++. ++i is increment derectly 		
+		std::cout << "The price is " << orders.at(i).price << std::endl;//more object stlye syntax
+	}
 
 
 	return 0;
