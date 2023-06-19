@@ -141,7 +141,7 @@ int main()
 	//}
 
 	std::vector<OrderBookEntry> orders;
-	//do that in vector
+	//do that in vector.
 	/*OrderBookEntry order1{ 1000,0.02,"2020/03/17 17:01:24.884492" ,"BTC/USDT" ,OrderBookType::bid };
 	OrderBookEntry order2{ 3000,0.02,"2020/03/17 17:01:24.884492" ,"BTC/USDT" ,OrderBookType::bid };
 	*/
