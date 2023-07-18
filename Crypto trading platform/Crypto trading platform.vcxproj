@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Crypto trading platform.cpp" />
+    <ClCompile Include="MerkelMain.cpp" />
     <ClCompile Include="OrderBookEntry.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MerkelMain.h" />
     <ClInclude Include="OrderBookEntry.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

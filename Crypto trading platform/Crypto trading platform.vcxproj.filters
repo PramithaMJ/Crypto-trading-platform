@@ -21,9 +21,15 @@
     <ClCompile Include="OrderBookEntry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MerkelMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OrderBookEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MerkelMain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
