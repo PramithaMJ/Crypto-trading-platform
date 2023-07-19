@@ -4,6 +4,8 @@
 class MerkelMain{
 	public:
 		MerkelMain();
+		/** Call this ro start sim */
+
 		void init();
 
 		void prinMenu();

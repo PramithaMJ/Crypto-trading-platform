@@ -13,7 +13,7 @@
 int main()
 {
 	MerkelMain app{};
-	app.prinMenu();
+	app.init();
 }
 
 /*
