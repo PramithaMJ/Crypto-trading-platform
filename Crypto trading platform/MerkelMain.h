@@ -7,7 +7,7 @@ class MerkelMain{
 		/** Call this ro start sim */
 
 		void init();
-
+private:
 		void prinMenu();
 		void printHelp();
 		void printMarketStats();
