@@ -1,13 +1,17 @@
-#pragma once
+#pragma once  //only include pragrma once
 #include<iostream>
+#include<vector>
+#include "OrderBookEntry.h"
+
 
 class MerkelMain{
 	public:
 		MerkelMain();
 		/** Call this ro start sim */
-
 		void init();
-private:
+
+	private:
+		void loadOderBook();
 		void prinMenu();
 		void printHelp();
 		void printMarketStats();
@@ -17,5 +21,8 @@ private:
 		void gotoNextTimeFrame();
 		int getUserOption();
 		void processUserOption(int userOption);
+
+		std::vector<OrderBookEntry> orders;
+
 		
 };
